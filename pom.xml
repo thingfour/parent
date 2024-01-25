@@ -264,6 +264,10 @@
           <groupId>org.sonatype.central</groupId>
           <artifactId>central-publishing-maven-plugin</artifactId>
           <version>${central-publishing-maven-plugin.version}</version>
+          <configuration>
+            <publishingServerId>sonatype-central</publishingServerId>
+            <tokenAuth>true</tokenAuth>
+          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -474,10 +478,6 @@
             <groupId>org.sonatype.central</groupId>
             <artifactId>central-publishing-maven-plugin</artifactId>
             <extensions>true</extensions>
-            <configuration>
-              <publishingServerId>sonatype-central</publishingServerId>
-              <tokenAuth>true</tokenAuth>
-            </configuration>
           </plugin>
         </plugins>
       </build>
