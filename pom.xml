@@ -90,9 +90,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <snapshot.repository-id>sonatype-nexus-snapshots</snapshot.repository-id>
-    <snapshot.repository-name>Sonatype Snapshots</snapshot.repository-name>
-    <snapshot.repository-url>https://oss.sonatype.org/content/repositories/snapshots/</snapshot.repository-url>
+    <snapshot.repository-id>thing4-snapshots</snapshot.repository-id>
+    <snapshot.repository-name>Thing4 Snapshots</snapshot.repository-name>
+    <snapshot.repository-url>https://repository.connectorio.cloud/repository/thing4-snapshots/</snapshot.repository-url>
 
     <release.repository-id>sonatype-nexus-staging</release.repository-id>
     <release.repository-name>Sonatype Central Synchronisation</release.repository-name>
@@ -105,7 +105,7 @@
     <maven-wagon.version>3.4.3</maven-wagon.version>
     <maven-scm.version>1.12.0</maven-scm.version>
     <maven-scm-publish-plugin.version>3.1.0</maven-scm-publish-plugin.version>
-    <central-publishing-maven-plugin.version>0.1.6</central-publishing-maven-plugin.version>
+    <central-publishing-maven-plugin.version>0.3.0</central-publishing-maven-plugin.version>
   </properties>
 
   <!-- Repositories -->
