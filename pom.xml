@@ -368,7 +368,6 @@
         <activeByDefault>true</activeByDefault>
       </activation>
 
-
       <repositories>
         <repository>
           <id>openhab-release</id>
@@ -524,6 +523,27 @@
           </plugin>
         </plugins>
       </build>
+    </profile>
+
+    <profile>
+      <id>thing4</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+
+      <pluginRepositories>
+        <pluginRepository>
+          <id>thing4-snapshots</id>
+          <name>Thing4 snapshots</name>
+          <url>https://repository.connectorio.cloud/repository/thing4-snapshots/</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </pluginRepository>
+      </pluginRepositories>
     </profile>
   </profiles>
 
