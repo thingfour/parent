@@ -547,6 +547,19 @@
         <activeByDefault>true</activeByDefault>
       </activation>
 
+      <repositories>
+        <repository>
+          <id>thing4-snapshots</id>
+          <name>Thing4 snapshots</name>
+          <url>https://repository.connectorio.cloud/repository/thing4-snapshots/</url>
+          <releases>
+            <enabled>false</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
       <pluginRepositories>
         <pluginRepository>
           <id>thing4-snapshots</id>
