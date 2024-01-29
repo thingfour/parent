@@ -22,7 +22,7 @@
   <!-- Project identification -->
   <groupId>org.thing4</groupId>
   <artifactId>parent</artifactId>
-  <version>3</version>
+  <version>4-SNAPSHOT</version>
 
   <name>Thing4 | Parent</name>
   <packaging>pom</packaging>
@@ -57,7 +57,7 @@
     <connection>scm:git:git@github.com:thingfour/parent.git</connection>
     <developerConnection>scm:git:git@github.com:thingfour/parent.git</developerConnection>
     <url>https://github.com/thingfour/parent</url>
-    <tag>3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <!-- properties -->
