@@ -94,9 +94,9 @@
     <snapshot.repository-name>Thing4 Snapshots</snapshot.repository-name>
     <snapshot.repository-url>https://repository.connectorio.cloud/repository/thing4-snapshots/</snapshot.repository-url>
 
-    <release.repository-id>sonatype-nexus-staging-s01</release.repository-id>
-    <release.repository-name>Sonatype Central Synchronisation (S01)</release.repository-name>
-    <release.repository-url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2</release.repository-url>
+    <release.repository-id>central</release.repository-id>
+    <release.repository-name>Sonatype Central Publishing Portal</release.repository-name>
+    <release.repository-url>https://central.sonatype.com</release.repository-url>
 
     <site.repository-id>github.com</site.repository-id>
     <site.repository-name>GitHub Pages</site.repository-name>
@@ -302,6 +302,15 @@
           <useReleaseProfile>false</useReleaseProfile>
           <releaseProfiles>release</releaseProfiles>
           <tagNameFormat>@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.sonatype.central</groupId>
+        <artifactId>central-publishing-maven-plugin</artifactId>
+        <version>0.8.0</version>
+        <extensions>true</extensions>
+        <configuration>
+          <publishingServerId>central</publishingServerId>
         </configuration>
       </plugin>
     </plugins>
