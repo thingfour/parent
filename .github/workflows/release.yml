@@ -31,8 +31,13 @@ jobs:
       CI_RELEASE_PASSWORD: ${{ secrets.CI_RELEASE_PASSWORD }}
     with:
       openhab: false
-      server_id: 'central'
+      server_id: ''
       release_version: ${{ inputs.release_version }}
       development_version: ${{ inputs.development_version }}
       perform_version: ${{ inputs.perform_version }}
       dry_run: ${{ inputs.dry_run }}
+      mvn_credentials: |
+        central:CI_RELEASE_USERNAME:CI_RELEASE_PASSWORD
+      mvn_server_origins: |
+        central:https://central.sonatype.com
+        central:https://repo.maven.apache.org

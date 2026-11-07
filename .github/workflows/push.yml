@@ -19,3 +19,5 @@ jobs:
       server_id: thing4-snapshots
       deploy: true
       skip_test_publish: true
+      mvn_server_origins: |
+        thing4-snapshots:https://repository.connectorio.cloud
